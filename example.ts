@@ -26,8 +26,8 @@ class Example {
 // Usage
 const deployerPrivatekey = 'your_private_key_here'; // Replace with your actual private key
 const tokenUri = 'your_token_uri_here'; //Replace with actual token uri
-const tokenSymbol = 'your_token_symbol_here'; //Replace with actual token symbol, this example is for dogwifhat
-const tokenName = 'your_token_name_here'; //Replace with actual token name, this example is for dogwifhat
+const tokenSymbol = 'your_token_symbol_here'; //Replace with actual token symbol
+const tokenName = 'your_token_name_here'; //Replace with actual token name
 
 
 const example = new Example(deployerPrivatekey,tokenUri, tokenSymbol, tokenName);
