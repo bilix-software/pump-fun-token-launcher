@@ -1,0 +1,91 @@
+
+# Pump.fun Token Launcher
+
+This repository provides tools and scripts for programmatically launching `pump.fun` tokens. The project is set up using TypeScript and includes essential modules to facilitate token creation and management.
+
+## Features
+
+- Programmatically launch `pump.fun` tokens.
+- Utilities for managing token configurations.
+- Easy integration into existing projects.
+
+## Prerequisites
+
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (version 14 or later)
+- [npm](https://www.npmjs.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## Installation
+
+To install the package, clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/bilix-software/pump-fun-token-launcher.git
+cd pump-fun-token-launcher
+npm install
+```
+
+## Configuration
+
+Before using the modules, ensure you have configured your environment with the necessary API keys and configuration settings. Contact [your-email@example.com](mailto:your-email@example.com) for more information on obtaining the required credentials and configuration details.
+
+## Usage
+
+To compile and run the scripts:
+
+1. Configure your environment variables as instructed.
+2. Compile the TypeScript files:
+
+```bash
+npx tsc
+```
+
+3. Run the compiled JavaScript file:
+
+```bash
+node dist/launch.js
+```
+
+## Project Structure
+
+- `src/`: Contains the source code for the package.
+    - `constants.ts`: Contains constant values used throughout the project.
+    - `launch.ts`: Main module for launching tokens.
+    - `utils.ts`: Utility functions used in the project.
+- `package.json`: Project metadata and dependencies.
+- `tsconfig.json`: TypeScript configuration file.
+
+## Example Output
+
+Below is an example of the output generated when running the script:
+
+```json
+{
+    "status": "success",
+    "token": {
+        "name": "ExampleToken",
+        "symbol": "EXT",
+        "address": "GeneratedTokenAddressHere"
+    }
+}
+```
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a pull request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to contact [your-email@example.com](mailto:your-email@example.com) for more details or any queries.
