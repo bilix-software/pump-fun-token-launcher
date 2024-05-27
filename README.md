@@ -54,21 +54,6 @@ node dist/launch.js
 - `package.json`: Project metadata and dependencies.
 - `tsconfig.json`: TypeScript configuration file.
 
-## Example Output
-
-Below is an example of the output generated when running the script:
-
-```json
-{
-    "status": "success",
-    "token": {
-        "name": "ExampleToken",
-        "symbol": "EXT",
-        "address": "GeneratedTokenAddressHere"
-    }
-}
-```
-
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
