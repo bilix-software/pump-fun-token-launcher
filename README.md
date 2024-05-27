@@ -2,6 +2,7 @@
 # Pump.fun Token Launcher
 
 This repository provides tools and scripts for programmatically launching `pump.fun` tokens. The project is set up using TypeScript and includes essential modules to facilitate token creation and management.
+Some information to perform the launch transaction successfully has been redacted, contact me at info@bilix.io if you're interested.
 
 ## Features
 
@@ -26,10 +27,6 @@ git clone https://github.com/bilix-software/pump-fun-token-launcher.git
 cd pump-fun-token-launcher
 npm install
 ```
-
-## Configuration
-
-Before using the modules, ensure you have configured your environment with the necessary API keys and configuration settings. Contact [your-email@example.com](mailto:your-email@example.com) for more information on obtaining the required credentials and configuration details.
 
 ## Usage
 
@@ -85,7 +82,3 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to contact [your-email@example.com](mailto:your-email@example.com) for more details or any queries.
