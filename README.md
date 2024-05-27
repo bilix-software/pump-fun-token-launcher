@@ -42,7 +42,7 @@ npx tsc
 3. Run the compiled JavaScript file:
 
 ```bash
-node dist/launch.js
+node example.js
 ```
 
 ## Project Structure
