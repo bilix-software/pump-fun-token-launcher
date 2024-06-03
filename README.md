@@ -4,6 +4,7 @@
 This repository provides tools and scripts for programmatically launching `pump.fun` tokens. The project is set up using TypeScript and includes essential modules to facilitate token creation and management.
 Some information to perform the launch transaction successfully has been redacted, contact me at info@bilix.io if you're interested.
 
+Services are for hire, contact me at https://t.me/bilixsoftware or info@bilix.io
 ## Features
 
 - Programmatically launch `pump.fun` tokens.
