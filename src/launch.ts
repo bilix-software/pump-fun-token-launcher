@@ -71,7 +71,7 @@ export async function launchToken(deployerPrivatekey: string, name: string, symb
 
     txBuilder.add(instruction);
 
-    const transaction = await createTransaction(connection, [instruction], payer.publicKey);
+    const transaction = await createTransaction(connection, txBuilder.instructions, payer.publicKey);
     const signature = await sendAndConfirmTransactionWrapper(connection, transaction, [payer, mint]);
     console.log(`Tx confirmed with signature: ${signature}`)
 }
