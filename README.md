@@ -4,6 +4,11 @@
 This repository provides tools and scripts for programmatically launching `pump.fun` tokens. The project is set up using TypeScript and includes essential modules to facilitate token creation and management.
 Some information to perform the launch transaction successfully has been redacted, contact me at info@bilix.io if you're interested.
 
+A showcase of this launcher can now be used on: https://6660469cc5e368f6d03d4f3b--beamish-twilight-4d66d8.netlify.app/
+For a fee you can use this bundler to launch a token with your own buys.
+
+https://github.com/bilix-software/pump-fun-token-launcher/assets/170088768/166ade6c-5722-48aa-94ee-ed8eeeab1e77
+
 Services are for hire, contact me at https://t.me/bilixsoftware or info@bilix.io
 ## Features
 
