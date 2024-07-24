@@ -9,14 +9,17 @@ Some information to perform the launch transaction successfully has been redacte
 A showcase of this launcher can now be used on: https://viper.bot
 For a fee you can use this bundler to launch a token with your own buys.
 It contains the following features:
-  - Bundle launch with up to 16 buy transactions
+  - Bundle launch with up to 17 buy transactions
   - Enter mint privatekey to ensure mint ends in pump
   - Buying and Selling
   - Sell single wallet by percentage
   - Sell all wallets completely through Jito Bundle
 
 # Launch showcase
-https://github.com/bilix-software/pump-fun-bundler/assets/170088768/59defc28-b07b-46e4-8041-fb48568f6e0c
+https://github.com/user-attachments/assets/8c415637-0422-42ac-9dd5-79d99b2a273e
+
+# Telegram bot launch showcase
+https://github.com/user-attachments/assets/bc6b1a40-96e1-46c1-812e-f2abc17b8ef5
 
 # Trading showcase
 https://github.com/bilix-software/pump-fun-bundler/assets/170088768/8ae13af5-23dc-4d02-8c30-d7749415fba8
