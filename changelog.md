@@ -1,3 +1,12 @@
+Changelog for 25-07-2024:
+  - Backend (used by Telegram bot and Web UI)
+    - Fixed bug where duplicate wallets would cause issue when using the sell all function
+  - Web UI
+    - Fixed bug where fee at the bottom of page wasn't updating properly
+    - Added Changelog Tab to navigation
+  - Telegram bot
+    - Fixed bug where wallets were not deleting properly
+
 Changelog for 24-07-2024:
   - Github repo's
     - Added new showcase videos to illustrate updated features
