@@ -1,5 +1,6 @@
 
 # Pump.fun Token Launcher
+Update 26-07-2024: You can now try the bot with a one-time coupon for free on https://viper.bot/. See https://t.me/viper_discussions for more info and to obtain a coupon.
 
 New: There is now also a telegram bot available for my [bundler]([https://nodejs.org/](https://github.com/bilix-software/pump-fun-bundler)) at: https://t.me/viper_pump_bot.  Note: this is a first version so any feedback is appreciated.
 
