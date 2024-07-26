@@ -1,3 +1,7 @@
+Changelog for 26-07-2024:
+  - Web UI
+    - Added option to use one time coupon codes that remove fees
+    - See https://t.me/viper_discussions for more info and to obtain a trial coupon
 Changelog for 25-07-2024:
   - Backend (used by Telegram bot and Web UI)
     - Fixed bug where duplicate wallets would cause issue when using the sell all function
