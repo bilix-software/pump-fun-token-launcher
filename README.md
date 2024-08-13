@@ -1,11 +1,12 @@
 
 # Pump.fun Token Launcher
+Update 13-08-2024: We have updated the redacted information required to programatically launch a token on pump.fun. Since there are a lot of bundlers out there, we have decided to open source this information.
+
 Update 26-07-2024: You can now try the bot with a one-time coupon for free on https://viper.bot/. See https://t.me/viper_discussions for more info and to obtain a coupon.
 
 New: There is now also a telegram bot available for my [bundler]([https://nodejs.org/](https://github.com/bilix-software/pump-fun-bundler)) at: https://t.me/viper_pump_bot.  Note: this is a first version so any feedback is appreciated.
 
 This repository provides tools and scripts for programmatically launching `pump.fun` tokens. The project is set up using TypeScript and includes essential modules to facilitate token creation and management.
-Some information to perform the launch transaction successfully has been redacted, contact me at info@bilix.io if you're interested.
 
 A showcase of this launcher can now be used on: https://viper.bot
 For a fee you can use this bundler to launch a token with your own buys.
