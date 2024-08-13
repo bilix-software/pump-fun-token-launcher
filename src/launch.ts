@@ -15,11 +15,24 @@ export async function launchToken(deployerPrivatekey: string, name: string, symb
     //Create new wallet to be used as mint
     const mint = Keypair.generate();
 
-    const bondingCurve = new PublicKey("REDACTED")
+    const [bondingCurve, bondingCurveBump] = await PublicKey.findProgramAddress(
+        [Buffer.from("bonding-curve"), mint.publicKey.toBuffer()],
+        PUMP_FUN_PROGRAM
+    );
 
-    const associatedBondingCurve = new PublicKey("REDACTED")
+    const [associatedBondingCurve, associatedBondingCurveBump] = PublicKey.findProgramAddressSync(
+        [
+            bondingCurve.toBuffer(),
+            new PublicKey("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA").toBuffer(),
+            mint.publicKey.toBuffer()
+        ],
+        new PublicKey("ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL")
+    );
 
-    const metadata = new PublicKey("REDACTED")
+    const [metadata, metadataBump] = await PublicKey.findProgramAddress(
+        [Buffer.from("metadata"), MPL_TOKEN_METADATA.toBuffer(), mint.publicKey.toBuffer()],
+        MPL_TOKEN_METADATA
+    );
 
     const txBuilder = new web3.Transaction();
 
