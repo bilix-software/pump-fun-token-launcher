@@ -1,5 +1,7 @@
 
 # Pump.fun Token Launcher
+Update 26-08-2024: There is now also a command-line bundler for sale. Contact me on telegram if you're interested. [showcase](https://streamable.com/46042a)
+
 Update 13-08-2024: We have updated the redacted information required to programatically launch a token on pump.fun. Since there are a lot of bundlers out there, we have decided to open source this information.
 
 Update 26-07-2024: You can now try the bot with a one-time coupon for free on https://viper.bot/. See https://t.me/viper_discussions for more info and to obtain a coupon.
