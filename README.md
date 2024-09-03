@@ -1,5 +1,6 @@
 
 # Pump.fun Token Launcher
+Update 03-09-2024: Cmd line bundler now includes token amounts calculator [showcase](https://streamable.com/saj2ro). Price for bundler is flat 10 SOL.
 Update 26-08-2024: There is now also a command-line bundler for sale. Contact me on telegram if you're interested. [showcase](https://streamable.com/46042a)
 
 Update 13-08-2024: We have updated the redacted information required to programatically launch a token on pump.fun. Since there are a lot of bundlers out there, we have decided to open source this information.
