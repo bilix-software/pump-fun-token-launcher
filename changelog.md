@@ -1,3 +1,8 @@
+Changelog for 10-04-2024:
+  - Web UI
+    - Added beta.viper.bot for testing new features
+    - Added bundling option up to 25 wallets on beta.viper.bot
+    - Bugfix for not showing proper error messages on both viper.bot and beta.viper.bot
 Changelog for 26-07-2024:
   - Web UI
     - Added option to use one time coupon codes that remove fees
