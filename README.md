@@ -1,6 +1,7 @@
 
 # Pump.fun Token Launcher
 Update 04-10-2024: Added beta.viper.bot domain with beta functionality supporting up to 25 wallets bundled with launch [showcase](https://streamable.com/6dc5l7). 
+
 Update 03-09-2024: Cmd line bundler now includes token amounts calculator [showcase](https://streamable.com/saj2ro). Price for bundler is flat 10 SOL.
 Update 26-08-2024: There is now also a command-line bundler for sale. Contact me on telegram if you're interested. [showcase](https://streamable.com/46042a)
 
