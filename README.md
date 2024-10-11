@@ -1,8 +1,20 @@
-
+![image](https://github.com/user-attachments/assets/168538fe-6f9d-4591-a898-bbd58bb2b593)
 # Pump.fun Token Launcher
 Update 04-10-2024: Added beta.viper.bot domain with beta functionality supporting up to 25 wallets bundled with launch [showcase](https://streamable.com/6dc5l7). 
 
 Update 03-09-2024: Cmd line bundler now includes token amounts calculator [showcase](https://streamable.com/saj2ro). Price for bundler is flat 10 SOL.
+Features of this bundler include:
+
+-Bundle up to 17 buys
+
+-Selling per wallet
+
+-Selling all tokens at once
+
+-Solana vanity generation built in (so it can mine an address ending in pump for you)
+
+-Calculator for sol amounts to buy based on wanted % supply
+
 Update 26-08-2024: There is now also a command-line bundler for sale. Contact me on telegram if you're interested. [showcase](https://streamable.com/46042a)
 
 Update 13-08-2024: We have updated the redacted information required to programatically launch a token on pump.fun. Since there are a lot of bundlers out there, we have decided to open source this information.
