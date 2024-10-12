@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/168538fe-6f9d-4591-a898-bbd58bb2b593)
 # Pump.fun Token Launcher
 Update 04-10-2024: Added beta.viper.bot domain with beta functionality supporting up to 25 wallets bundled with launch [showcase](https://streamable.com/6dc5l7). 
 
