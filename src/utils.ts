@@ -13,7 +13,7 @@ export async function getKeyPairFromPrivateKey(key: string) {
 export async function createTransaction(connection: Connection, instructions: TransactionInstruction[], payer: PublicKey): Promise<Transaction> {
     const transaction = new Transaction().add(...instructions);
     transaction.feePayer = payer;
-    transaction.recentBlockhash = (await connection.getRecentBlockhash()).blockhash;
+    transaction.recentBlockhash = (await connection.getLatestBlockhash()).blockhash;
     return transaction;
 }
 
