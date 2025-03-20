@@ -68,12 +68,14 @@ export async function launchToken(deployerPrivatekey: string, name: string, symb
     const nameBuffer = bufferFromString(name);
     const symbolBuffer = bufferFromString(symbol);
     const uriBuffer = bufferFromString(uri);
+    const deployerBuffer = bufferFromString(payer.publicKey.toString());
 
     const data = Buffer.concat([
         Buffer.from("181ec828051c0777", "hex"),
         nameBuffer,
         symbolBuffer,
-        uriBuffer
+        uriBuffer,
+        deployerBuffer
     ]);
 
     const instruction = new web3.TransactionInstruction({
