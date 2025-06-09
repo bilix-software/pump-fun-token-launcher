@@ -31,7 +31,7 @@ const config = {
   priorityFee: 0.001 // SOL amount for priority fee
 };
 
-const privateKey = "your_base64_encoded_private_key";
+const privateKey = "your_base64_encoded_private_key"; // also supports base58
 
 try {
   const result = await launchToken(config, privateKey);
@@ -96,7 +96,7 @@ Launches a new token on pump.fun.
 
 **Parameters:**
 - `config` (TokenLaunchConfig): Token configuration object
-- `privateKey` (string | Keypair): Base58 encoded private key or Keypair instance
+- `privateKey` (string | Keypair): Base64/Base58 encoded private key or Keypair instance
 - `rpcUrl` (string, optional): Custom Solana RPC URL
 
 **Returns:** `Promise<LaunchResult>`
@@ -142,7 +142,7 @@ Validates a token configuration object.
    - Initial token purchase (if specified)
    - Priority fees
 
-2. Your private key should be base64 encoded or you can pass a Keypair object directly.
+2. Your private key should be base64 or base58 encoded or you can pass a Keypair object directly.
 
 ## Error Handling
 
