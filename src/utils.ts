@@ -3,6 +3,7 @@ import { Connection, PublicKey, Transaction, TransactionInstruction, sendAndConf
 import bs58 from 'bs58';
 import { sha256 } from '@noble/hashes/sha256'
 import { TOKEN_PROGRAM_ID } from '@solana/spl-token'
+import BN from 'bn.js';
 
 export async function getKeyPairFromPrivateKey(key: string) {
     return Keypair.fromSecretKey(
@@ -58,4 +59,35 @@ export function generatePubKey({
     buffer.writeUInt32LE(value.length, 0);
     buffer.write(value, 4);
     return buffer;
+}
+
+/**
+ * Calculates the token amount that can be bought, given reserves and input amount.
+ *
+ * @param solInLamports - Amount of SOL to spend (in lamports)
+ * @param reserves - Object containing virtualTokenReserves and virtualSolReserves (BN)
+ * @param feeBasisPoints - Fee in basis points (e.g. 0 for no fee)
+ * @returns BN - Amount of token output
+ */
+export function calculateTokenAmountForBuy(
+  solInLamports: BN,
+  reserves: {
+    virtualTokenReserves: BN;
+    virtualSolReserves: BN;
+  },
+  feeBasisPoints: number
+): BN {
+  if (solInLamports.eq(new BN(0)) || !reserves) {
+    return new BN(0);
+  }
+
+  const product = reserves.virtualSolReserves.mul(reserves.virtualTokenReserves);
+  const newVirtualSolReserves = reserves.virtualSolReserves.add(solInLamports);
+  const newVirtualTokenReserves = product.div(newVirtualSolReserves).add(new BN(1));
+  let tokenOut = reserves.virtualTokenReserves.sub(newVirtualTokenReserves);
+  tokenOut = BN.min(tokenOut, reserves.virtualTokenReserves);
+
+  // Fee deduction
+  const fee = tokenOut.mul(new BN(feeBasisPoints)).div(new BN(10000));
+  return tokenOut.sub(fee);
 }

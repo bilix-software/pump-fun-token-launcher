@@ -1,24 +1,45 @@
 {
   "name": "pump-fun-token-launcher",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Programmatically launch pump.fun tokens with TypeScript support",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "tsx example.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "pump.fun",
+    "solana",
+    "token",
+    "crypto",
+    "blockchain",
+    "defi"
+  ],
+  "author": "Bilix Software",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bilix-software/pump-fun-token-launcher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bilix-software/pump-fun-token-launcher/issues"
+  },
+  "homepage": "https://github.com/bilix-software/pump-fun-token-launcher#readme",
   "devDependencies": {
-    "typescript": "^5.4.5"
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0"
   },
   "dependencies": {
-    "@openbook-dex/openbook": "^0.0.9",
-    "@raydium-io/raydium-sdk": "^1.3.1-beta.52",
-    "@solana/spl-token": "^0.4.6",
-    "@solana/web3.js": "^1.91.8",
-    "axios": "^1.6.8",
-    "bs58": "^5.0.0",
-    "buffer-layout": "^1.2.2"
+    "@solana/web3.js": "^1.95.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }

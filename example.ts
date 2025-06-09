@@ -1,34 +1,61 @@
-import { launchToken } from './src/launch';
+import { launchToken, TokenLaunchConfig, validateTokenConfig } from './src';
+import { Keypair } from '@solana/web3.js';
 
-class Example {
-    private deployerPrivatekey: string;
-    private tokenUri: string;
-    private tokenSymbol: string;
-    private tokenName: string;
+// Example configuration
+const tokenConfig: TokenLaunchConfig = {
+  name: "Example Token",
+  symbol: "EXAMPLE",
+  metadataUrl: "https://example.com/token-image.png",
+  mintKeypair: undefined, // Optional: use a custom mint keypair if needed, otherwise it will be generated automatically
+  initialBuy: 0.1, // 0.1 SOL initial buy
+  slippage: 5,     // 5% slippage tolerance
+  priorityFee: 0.001 // 0.001 SOL priority fee
+};
 
+async function main() {
+  try {
+    // Validate configuration first
+    console.log("Validating token configuration...");
+    validateTokenConfig(tokenConfig);
+    console.log("✅ Configuration is valid");
 
-    constructor(deployerPrivatekey: string, tokenUri: string, tokenSymbol: string, tokenName: string) {
-        this.deployerPrivatekey = deployerPrivatekey;
-        this.tokenUri = tokenUri;
-        this.tokenSymbol = tokenSymbol;
-        this.tokenName = tokenName;
+    // Replace with your actual private key (base64 encoded)
+    // Or use environment variable: process.env.PRIVATE_KEY
+    const privateKey = "YOUR_BASE64_ENCODED_PRIVATE_KEY_HERE";
+    
+    // Alternative: Generate a new keypair for testing
+    // const keyPair = Keypair.generate();
+    // console.log("Generated new keypair:", keyPair.publicKey.toString());
+
+    console.log("Launching token...");
+    console.log("Config:", tokenConfig);
+
+    // Launch the token
+    const result = await launchToken(
+      tokenConfig,
+      privateKey,
+      // Optional: specify custom RPC URL
+      // "https://your-custom-rpc-url.com"
+    );
+
+    if (result.success) {
+      console.log("🎉 Token launched successfully!");
+      console.log("Token Address:", result.tokenAddress);
+      console.log("Transaction Signature:", result.signature);
+      console.log("View on Solscan:", `https://solscan.io/tx/${result.signature}`);
+    } else {
+      console.error("❌ Token launch failed:");
+      console.error(result.error);
     }
 
-    async main() {
-        try {
-            await launchToken(this.deployerPrivatekey, this.tokenName, this.tokenSymbol, this.tokenUri)
-        } catch (error) {
-            console.error('Error in main function:', error);
-        }
-    }
+  } catch (error) {
+    console.error("❌ Error occurred:", error);
+  }
 }
 
-// Usage
-const deployerPrivatekey = 'your_private_key_here'; // Replace with your actual private key
-const tokenUri = 'your_token_uri_here'; //Replace with actual token uri
-const tokenSymbol = 'your_token_symbol_here'; //Replace with actual token symbol
-const tokenName = 'your_token_name_here'; //Replace with actual token name
+// Run the example
+if (require.main === module) {
+  main().catch(console.error);
+}
 
-
-const example = new Example(deployerPrivatekey,tokenUri, tokenSymbol, tokenName);
-example.main();
+export default main;
