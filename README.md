@@ -1,5 +1,5 @@
-[![npm version](https://badge.fury.io/js/pump-fun-token-launcher.svg)](https://badge.fury.io/js/@bilix-software%2Fpump-fun-token-launcher)
-[![npm downloads](https://img.shields.io/npm/dm/pump-fun-token-launcher.svg)](https://www.npmjs.com/package/@bilix-software/pump-fun-token-launcher)
+[![npm version](https://badge.fury.io/js/pump-fun-token-launcher.svg)](https://badge.fury.io/js/pump-fun-token-launcher)
+[![npm downloads](https://img.shields.io/npm/dm/pump-fun-token-launcher.svg)](https://www.npmjs.com/package/pump-fun-token-launcher)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 [![Solana](https://img.shields.io/badge/Solana-Compatible-purple.svg)](https://solana.com/)
